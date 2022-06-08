@@ -88,7 +88,8 @@
                     @foreach ($datas as $items)
                     <div class="col-12 col-md-3 mt-4">
                         <div class="card col-12">
-                            <img src={{asset("image/". $items['image'])}} class="card-img-top" alt="..." style="50px">
+                            <img src={{asset("image/". $items['image'])}} class="card-img-top" alt="..." height="250px"
+                                style="object-fit: contain">
                             <div class="card-body shadow">
                                 <h5 class="card-title">{{$items['name']}}</h5>
                                 <p class="card-text text-warning">{{$items['harga']}}</p>
